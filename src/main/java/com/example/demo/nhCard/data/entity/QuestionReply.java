@@ -1,5 +1,6 @@
 package com.example.demo.nhCard.data.entity;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 import javax.persistence.Column;
@@ -18,7 +19,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "QUESTION_REPLY")
 @Data
-public class QuestionReply{
+public class QuestionReply implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
