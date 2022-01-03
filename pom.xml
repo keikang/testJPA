@@ -60,6 +60,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+			        <fork>true</fork>
+			        <executable>/usr/lib/jvm/java-8-openjdk-amd64/bin/javac</executable>				
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
